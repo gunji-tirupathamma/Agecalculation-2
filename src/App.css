@@ -1,0 +1,144 @@
+.maincontainer{
+    text-align: center;
+    margin-top: 60px;
+    background-image: url('https://t4.ftcdn.net/jpg/02/13/49/43/360_F_213494308_vFOsUkaK7cY6GwZZ0wU2QNwNXFCBBDow.jpg');
+    background-size: cover;
+    width: 60%;    
+    padding: 20px;
+    border-radius: 10px;
+    align-self: center;
+    margin-left: 15%;
+}
+
+h1{
+    color:rgb(235, 250, 25);
+    font-family: italic;
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+label{
+    font-size: 20px;
+    color:aqua;
+    font-weight: 700;
+}
+
+.birth-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.date-picker{
+    height: 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    width: 100px;
+}
+
+
+
+
+button{
+    width:150px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.output-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;  
+    border-style:dashed;
+    border-color: chartreuse;
+    animation: moveBorder 4s linear infinite;
+}
+
+.output-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.output-con-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+b{
+    margin-bottom: 0;
+    color:blanchedalmond;
+    font-size: 30px;
+    
+}
+.out-p{
+    margin-top: 0;
+    margin-left: 10px;
+    color:rgb(20, 248, 252);
+    font-size: 25px;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 525px){
+    h1{
+        font-size: 25px;
+    }
+    label{
+        font-size: 17px;
+    }
+    .date-picker{
+        font-size: 14px;
+    }
+    button{
+        height: 30px;
+        width: 110px;
+    }
+    b{
+        font-size: 24px;
+    }
+    .out-p{
+        font-size: 18px;
+    }
+}
+
+@keyframes moveBorder {
+    0% {
+        border-color: chartreuse;
+    }
+    25% {
+        border-top-color: transparent;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+    75% {
+        border-bottom-color: transparent;
+    }
+    100% {
+        border-color: chartreuse;
+    }
+}
